@@ -1,7 +1,17 @@
 version: 2.1
-orbs:
-  node: circleci/node@3.0.0
+
+jobs:
+  test:
+    docker:
+      - image: cimg/node:12.19.0
+      - image: cahva/docker-beanstalkd:v1
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm test
+
 workflows:
-  node-tests:
+  test:
     jobs:
-      - node/test
+      - test
+  

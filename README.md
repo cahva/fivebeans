@@ -1,6 +1,6 @@
 A straightforward and (nearly) complete [beanstalkd](http://kr.github.com/beanstalkd/) client for node.js, along with a more opinionated beanstalkd jobs worker & runner.
 
-[![cahva](https://circleci.com/gh/cahva/fivebeans.svg?style=svg)](https://circleci.com/gh/cahva/fivebeans)
+[![cahva](https://circleci.com/gh/cahva/fivebeans.svg?style=svg)](https://circleci.com/gh/cahva/fivebeans) [![Coverage Status](https://coveralls.io/repos/github/cahva/fivebeans/badge.svg?branch=master)](https://coveralls.io/github/cahva/fivebeans?branch=master)
 
 ## FiveBeansClient
 

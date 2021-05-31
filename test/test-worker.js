@@ -118,8 +118,8 @@ describe('FiveBeansWorker', function()
 			w.on('error', function(err)
 			{
 				err.must.exist();
-				err.must.have.property('errno');
-				err.errno.must.equal('ECONNREFUSED');
+				err.must.have.property('code');
+				err.code.must.equal('ECONNREFUSED');
 				done();
 			});
 			w.start();

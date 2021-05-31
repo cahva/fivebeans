@@ -1,15 +1,16 @@
 {
   "name": "fivebeans",
   "description": "beanstalkd client & worker daemon for node.",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "author": "C J Silverio <ceejceej@gmail.com>",
   "bin": {
     "beanworker": "./bin/beanworker"
   },
-  "bugs": "http://github.com/ceejbot/fivebeans/issues",
+  "bugs": "http://github.com/cahva/fivebeans/issues",
   "contributors": [
     "Jon Keating <jon@licq.org>",
-    "Jevgenij Tsoi <jevgenij@virtusize.com>"
+    "Jevgenij Tsoi <jevgenij@virtusize.com>",
+    "Markku Virtanen"
   ],
   "dependencies": {
     "js-yaml": "^3.14.1",

@@ -1,6 +1,6 @@
 {
-  "name": "fivebeans",
-  "description": "beanstalkd client & worker daemon for node.",
+  "name": "fivebeans-cahva",
+  "description": "beanstalkd client & worker daemon for node. forked version with updated dependencies.",
   "version": "1.5.1",
   "author": "C J Silverio <ceejceej@gmail.com>",
   "bin": {
@@ -10,7 +10,7 @@
   "contributors": [
     "Jon Keating <jon@licq.org>",
     "Jevgenij Tsoi <jevgenij@virtusize.com>",
-    "Markku Virtanen"
+    "Markku Virtanen <veltto.virtanen@gmail.com>"
   ],
   "dependencies": {
     "js-yaml": "^3.14.1",

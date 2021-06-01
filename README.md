@@ -2,13 +2,11 @@ A straightforward and (nearly) complete [beanstalkd](http://kr.github.com/beanst
 
 [![cahva](https://circleci.com/gh/cahva/fivebeans.svg?style=svg)](https://circleci.com/gh/cahva/fivebeans) [![Coverage Status](https://coveralls.io/repos/github/cahva/fivebeans/badge.svg?branch=master)](https://coveralls.io/github/cahva/fivebeans?branch=master)
 
-## FiveBeansClient
-
-**NOTE ABOUT THIS FORK:**
+## **!!NOTE ABOUT THIS FORK!!**
 
 This is a fork of [ceejbot fivebeans](https://github.com/ceejbot/fivebeans) where I upgraded outdated dependencies and added CircleCI to run tests. Added to snyk.io to inform about outdated or vulnerable depedencies.
 
-**END NOTE**
+## FiveBeansClient
 
 ---
 
@@ -30,7 +28,7 @@ The client emits three events that you should listen for: `connect`, `error`, an
 The client is not usable until you call its `connect()` method. Here's an example of setting up a client:
 
 ```javascript
-var fivebeans = require('fivebeans');
+var fivebeans = require('fivebeans-cahva');
 
 var client = new fivebeans.client('10.0.1.1', 11300);
 client
@@ -348,7 +346,7 @@ The [examples](examples) directory has another sample handler.
 This example starts a worker capable of handling the `emitkeys` example from above.
 
 ```javascript
-var Beanworker = require('fivebeans').worker;
+var Beanworker = require('fivebeans-cahva').worker;
 var options =
 {
     id: 'worker_4',
@@ -371,7 +369,7 @@ A wrapper that runs a single beanstalkd worker as a daemon. Responds to the USR2
 Example use:
 
 ```javascript
-var fivebeans = require('fivebeans');
+var fivebeans = require('fivebeans-cahva');
 var runner = new fivebeans.runner('worker_id_1', '/path/to/config.yml');
 runner.go();
 ```
@@ -395,7 +393,7 @@ var argv = require('yargs')
     .demand(['config'])
     .argv;
 
-var FiveBeans = require('fivebeans');
+var FiveBeans = require('fivebeans-cahva');
 
 var runner = new FiveBeans.runner(argv.id, argv.config);
 runner.go();
@@ -406,9 +404,8 @@ runner.go();
 Here's an example yaml configuration:
 
 ```yaml
-beanstalkd:
-    host: "127.0.0.1"
-    port: 11300
+host: "127.0.0.1"
+port: 11300
 watch:
     - 'circle'
     - 'picadilly'

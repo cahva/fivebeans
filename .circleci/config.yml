@@ -3,12 +3,13 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: cimg/node:12.19.0
+      - image: cimg/node:14.17
       - image: maateen/docker-beanstalkd:1.11-alpine-latest
     steps:
       - checkout
       - run: npm install
       - run: npm test
+      - run: npm run coverage
 
 workflows:
   test:

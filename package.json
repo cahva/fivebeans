@@ -14,7 +14,7 @@
   ],
   "dependencies": {
     "js-yaml": "^4.1.0",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "semver": "~7.5.4",
     "yargs": "~17.7.2"
   },
